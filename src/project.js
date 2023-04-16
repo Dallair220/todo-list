@@ -1,4 +1,4 @@
-export default function project() {
+export default function project(title) {
   let taskList = [];
   const addTask = (task) => {
     taskList.push(task);
@@ -6,5 +6,5 @@ export default function project() {
   const removeTask = (task) => {
     taskList = taskList.filter((t) => t !== task);
   };
-  return { taskList, addTask, removeTask };
+  return { title, taskList, addTask, removeTask };
 }

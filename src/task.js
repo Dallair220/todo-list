@@ -1,15 +1,10 @@
-export default function task(
-  title,
-  description,
-  priority,
-  dueDate,
-  isFinished
-) {
+export default function task(title, description, dueDate, isPriority = false) {
+  const isFinished = false;
   return {
     title,
     description,
-    priority,
     dueDate,
+    isPriority,
     isFinished,
   };
 }
