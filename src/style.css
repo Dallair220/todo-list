@@ -1,3 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300;1,400&display=swap');
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas:
+    'header header'
+    'sidebar content';
+  height: 100vh;
+}
+
 h1 {
-  color: royalblue;
+  text-align: center;
+  font-size: 50px;
+  margin: 20px;
+}
+
+.header {
+  grid-area: header;
+  background-color: royalblue;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: lightgray;
+}
+
+.content {
+  grid-area: content;
 }
