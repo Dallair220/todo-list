@@ -1,9 +1,5 @@
 export default function task(title, description, dueDate, isPriority = false) {
-  let isFinished = false;
-
-  const changeIsFinishedStatus = () => {
-    isFinished = !isFinished;
-  };
+  const isFinished = false;
 
   return {
     title,
@@ -11,6 +7,5 @@ export default function task(title, description, dueDate, isPriority = false) {
     dueDate,
     isPriority,
     isFinished,
-    changeIsFinishedStatus,
   };
 }
