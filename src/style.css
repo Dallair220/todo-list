@@ -58,3 +58,7 @@ li {
 .isFinished {
   color: green;
 }
+
+.projectIsSelected {
+  font-weight: bold;
+}

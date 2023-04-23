@@ -1,5 +1,6 @@
 function addTaskToContentArea(task) {
   const ul = document.querySelector('.tasks');
+
   const li = document.createElement('li');
   li.textContent = task.title;
   if (task.isPriority) li.classList.add('isPriority');
@@ -7,8 +8,14 @@ function addTaskToContentArea(task) {
   ul.appendChild(li);
 }
 
-// To show all tasks of a project in the content area
+function removeTasklistInDOM() {
+  document.querySelector('.tasks').innerHTML = '';
+}
+
+// Show all tasks of a project in the content area
 export default function contentTaskLoader(project) {
+  removeTasklistInDOM();
+
   project.taskList.forEach((task) => {
     addTaskToContentArea(task);
   });

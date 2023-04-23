@@ -3,8 +3,7 @@ import { format } from 'date-fns';
 import './style.css';
 import task from './task';
 import project from './project';
-import projectSidebarLoader from './projectLoader';
-import contentTaskLoader from './taskLoader';
+import projectSelectionHandler from './projectSelectionHandler';
 
 const todayDate = format(new Date(), 'dd/MM/yyyy');
 
@@ -23,12 +22,7 @@ p1.removeTask(t3);
 p2.addTask(t4);
 
 const projectList = [p1, p2];
-projectSidebarLoader(projectList);
 
-// console.log(t1);
-contentTaskLoader(p1);
+projectSelectionHandler(projectList);
 
-// projectList.forEach(project);
-
-// TODO: DEPENDING ON WHICH PROJECT IS SELECTED IN UI,
-// A DIFFERENT TASKLIST SHOULD BE SHOWN IN CONTENT AREA
+// export default projectList;
