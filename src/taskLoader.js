@@ -7,6 +7,7 @@ function addTaskToContentArea(task) {
   ul.appendChild(li);
 }
 
+// To show all tasks of a project in the content area
 export default function contentTaskLoader(project) {
   project.taskList.forEach((task) => {
     addTaskToContentArea(task);

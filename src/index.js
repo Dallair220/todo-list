@@ -8,6 +8,7 @@ import contentTaskLoader from './taskLoader';
 
 const todayDate = format(new Date(), 'dd/MM/yyyy');
 
+// Testing setup
 const p1 = project('Default');
 const t1 = task('Task 1', 'Description', todayDate);
 const t2 = task('Task 2', 'Description', todayDate);
@@ -24,9 +25,10 @@ p2.addTask(t4);
 const projectList = [p1, p2];
 projectSidebarLoader(projectList);
 
-console.log(t1);
+// console.log(t1);
 contentTaskLoader(p1);
 
 // projectList.forEach(project);
 
-// TODO: DEPENDING ON WHICH PROJECT IS SELECTED IN UI, A DIFFERENT TASKLIST SHOULD BE SHOWN IN CONTENT AREA
+// TODO: DEPENDING ON WHICH PROJECT IS SELECTED IN UI,
+// A DIFFERENT TASKLIST SHOULD BE SHOWN IN CONTENT AREA

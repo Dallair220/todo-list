@@ -1,3 +1,4 @@
+// Factory Function for new projects
 export default function project(title) {
   let taskList = [];
 

@@ -5,6 +5,7 @@ function addProjectToSidebar(project) {
   ul.appendChild(li);
 }
 
+// To show all projects in the sidebar
 export default function projectSidebarLoader(projects) {
   projects.forEach((project) => {
     addProjectToSidebar(project);

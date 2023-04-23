@@ -1,3 +1,4 @@
+// Factory Function for new tasks
 export default function task(title, description, dueDate, isPriority = false) {
   const isFinished = false;
 
