@@ -9,11 +9,11 @@ const todayDate = format(new Date(), 'dd/MM/yyyy');
 
 // Testing setup
 const p1 = project('Default');
-const t1 = task('Task 1', 'Description', todayDate);
-const t2 = task('Task 2', 'Description', todayDate);
+const t1 = task('Versohl Marias popo', 'Description', todayDate);
+const t2 = task('Nochmal!', 'Description', todayDate);
 const t3 = task('Task 3', 'Description', todayDate);
 const p2 = project('Default2');
-const t4 = task('TASK4', 'DESCRIPTION', todayDate);
+const t4 = task('Küss Schatz', 'DESCRIPTION', todayDate);
 
 p1.addTask(t1);
 p1.addTask(t2);

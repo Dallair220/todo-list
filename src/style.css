@@ -19,36 +19,42 @@ h1 {
   text-align: center;
   font-size: 60px;
   margin: 15px;
+  color: #b5c0a2;
 }
 
 .header {
   grid-area: header;
-  background-color: royalblue;
+  background-color: #2a3726;
 }
 
 .sidebar {
   grid-area: sidebar;
-  background-color: lightgray;
+  background-color: #b5c0a2;
 }
 
 .content {
   grid-area: content;
+  background-color: #f0efe9;
 }
 
-h2 {
-  font-size: 40px;
-  text-align: center;
-}
-
-ul {
+div.sidebar > ul {
   list-style-type: none;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
   padding: 0;
+  margin-left: 40px;
+}
+
+div.content > ul {
+  font-size: 20px;
+  text-align: left;
+  padding: 0;
+  margin-left: 40px;
 }
 
 li {
   padding: 10px;
+  font-weight: lighter;
 }
 
 .isPriority {
@@ -60,5 +66,13 @@ li {
 }
 
 .projectIsSelected {
-  font-weight: bold;
+  font-weight: 900;
+  color: #2a3726;
+}
+
+h2 {
+  color: #2a3726;
+  text-decoration: underline;
+  font-size: 40px;
+  margin-left: 50px;
 }
