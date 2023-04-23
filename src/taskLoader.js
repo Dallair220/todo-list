@@ -1,10 +1,20 @@
+function editTaskTitleAndDesign(task, li2) {
+  const li = li2;
+  if (task.isPriority) {
+    li.classList.add('isPriority');
+    li.textContent += '[ ❗ ] ';
+  }
+  if (task.isFinished) {
+    li.classList.add('isFinished');
+    console.log('finsiehd');
+  }
+  li.textContent += task.title;
+}
+
 function addTaskToContentArea(task) {
   const ul = document.querySelector('.tasks');
-
   const li = document.createElement('li');
-  li.textContent = task.title;
-  if (task.isPriority) li.classList.add('isPriority');
-  if (task.isFinished) li.classList.add('isFinished');
+  editTaskTitleAndDesign(task, li);
   ul.appendChild(li);
 }
 

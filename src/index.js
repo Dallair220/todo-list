@@ -9,7 +9,8 @@ const todayDate = format(new Date(), 'dd/MM/yyyy');
 
 // Testing setup
 const p1 = project('Default');
-const t1 = task('Versohl Marias popo', 'Description', todayDate);
+const t1 = task('Versohl Marias popo', 'Description', todayDate, true);
+
 const t2 = task('Nochmal!', 'Description', todayDate);
 const t3 = task('Task 3', 'Description', todayDate);
 const p2 = project('Default2');
