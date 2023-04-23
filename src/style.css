@@ -77,3 +77,18 @@ h2 {
   font-size: 40px;
   margin-left: 50px;
 }
+
+p {
+  margin: 0;
+  color: #2a3726;
+}
+
+button {
+  background-color: #b5c0a2;
+  border: #2a3726 solid;
+  color: #2a3726;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  font-weight: bold;
+}

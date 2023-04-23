@@ -9,9 +9,9 @@ import projectSelectionHandler from './projectSelectionHandler';
 const todayDate = format(new Date(), 'dd/MM/yyyy');
 
 const p1 = project('Default');
-const t1 = task('Versohl Marias popo', 'Description', todayDate, true);
+const t1 = task('Versohl Marias popo', 'richtig feste', todayDate, true);
 
-const t2 = task('Nochmal!', 'Description', todayDate);
+const t2 = task('Nochmal!', 'jaa', todayDate);
 const t3 = task('Task 3', 'Description', todayDate);
 const p2 = project('Default2');
 const t4 = task('Küss Schatz', 'DESCRIPTION', todayDate);
@@ -26,4 +26,4 @@ const projectList = [p1, p2];
 
 projectSelectionHandler(projectList);
 
-// export default projectList;
+export default projectList;

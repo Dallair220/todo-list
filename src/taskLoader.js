@@ -1,3 +1,5 @@
+import addTaskEventListener from './taskSelectionHandler';
+
 function addDueDate(task, li2) {
   const li = li2;
   li.textContent += `[Due: ${task.dueDate}] `;
@@ -13,7 +15,6 @@ function editTaskTitleAndDesign(task, li2) {
   }
   if (task.isFinished) {
     li.classList.add('isFinished');
-    console.log('finsiehd');
   }
   li.textContent += task.title;
 }
@@ -22,6 +23,7 @@ function addTaskToContentArea(task) {
   const ul = document.querySelector('.tasks');
   const li = document.createElement('li');
   editTaskTitleAndDesign(task, li);
+  addTaskEventListener(task, li);
   ul.appendChild(li);
 }
 
