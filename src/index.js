@@ -5,9 +5,9 @@ import task from './task';
 import project from './project';
 import projectSelectionHandler from './projectSelectionHandler';
 
+// Testing setup
 const todayDate = format(new Date(), 'dd/MM/yyyy');
 
-// Testing setup
 const p1 = project('Default');
 const t1 = task('Versohl Marias popo', 'Description', todayDate, true);
 

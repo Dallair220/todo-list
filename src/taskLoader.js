@@ -1,5 +1,12 @@
+function addDueDate(task, li2) {
+  const li = li2;
+  li.textContent += `[Due: ${task.dueDate}] `;
+}
+
 function editTaskTitleAndDesign(task, li2) {
   const li = li2;
+  addDueDate(task, li2);
+
   if (task.isPriority) {
     li.classList.add('isPriority');
     li.textContent += '[ ❗ ] ';
