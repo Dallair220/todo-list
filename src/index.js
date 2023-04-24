@@ -4,6 +4,7 @@ import './style.css';
 import task from './task';
 import project from './project';
 import projectSelectionHandler from './projectSelectionHandler';
+import loadEventListeners from './createProjectsAndTasks';
 
 const todayDate = format(new Date(), 'dd/MM/yyyy');
 
@@ -26,3 +27,4 @@ p2.addTask(t4);
 
 // Display Projects
 projectSelectionHandler();
+loadEventListeners();

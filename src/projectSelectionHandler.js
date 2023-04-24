@@ -12,17 +12,19 @@ function makeSelectedProjectBold(project) {
   currentSelectedProject = project;
 }
 
+function display(e) {
+  makeSelectedProjectBold(e);
+
+  // display the tasks of the selected project
+  const selectedProject = projectList.array.find(
+    (p) => p.title === e.srcElement.textContent
+  );
+  contentTaskLoader(selectedProject);
+}
+
 // after a project is selected in the UI, its tasklist should be displayed
 function displayTasksOfSelectedProject(pElement) {
-  pElement.addEventListener('click', (e) => {
-    makeSelectedProjectBold(e);
-
-    // display the tasks of the selected project
-    const selectedProject = projectList.array.find(
-      (p) => p.title === e.srcElement.textContent
-    );
-    contentTaskLoader(selectedProject);
-  });
+  pElement.addEventListener('click', display);
 }
 
 export default function projectSelectionHandler() {
