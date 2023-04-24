@@ -2,12 +2,12 @@
 import { format } from 'date-fns';
 import './style.css';
 import task from './task';
-import project, { projectList } from './project';
+import project from './project';
 import projectSelectionHandler from './projectSelectionHandler';
 
-// Testing setup
 const todayDate = format(new Date(), 'dd/MM/yyyy');
 
+// Testing setup
 const p1 = project('Default');
 
 const t1 = task('Einkaufen', 'Banane, diesdas', todayDate, true);
@@ -24,4 +24,5 @@ p1.removeTask(t3);
 
 p2.addTask(t4);
 
-projectSelectionHandler(projectList.projectArrayList);
+// Display Projects
+projectSelectionHandler();

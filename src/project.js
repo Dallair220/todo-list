@@ -1,17 +1,15 @@
 export const projectList = (() => {
-  const projectArrayList = [];
+  const array = [];
 
-  const addNewProject = (newProject) => projectArrayList.push(newProject);
+  const addNewProject = (newProject) => array.push(newProject);
 
   const removeTask = (task) => {
-    // projectArrayList.filter
-    // console.log(projectArrayList);
-    projectArrayList.forEach((prjct) => {
+    array.forEach((prjct) => {
       if (prjct.isTaskAvailable(task)) prjct.removeTask(task);
     });
   };
 
-  return { projectArrayList, addNewProject, removeTask };
+  return { array, addNewProject, removeTask };
 })();
 
 // Factory Function for new projects
