@@ -2,6 +2,7 @@ import projectSidebarLoader from './projectLoader';
 import contentTaskLoader from './taskLoader';
 import { projectList } from './project';
 
+// eslint-disable-next-line import/no-mutable-exports
 let currentSelectedProject;
 
 function makeSelectedProjectBold(project) {
@@ -34,3 +35,5 @@ export default function projectSelectionHandler() {
     displayTasksOfSelectedProject(pElement);
   });
 }
+
+export { currentSelectedProject };
